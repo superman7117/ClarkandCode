@@ -4,17 +4,22 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="main.js"></script></head>
+
 </head>
 <body>
   <div id='title'>
-    <div class="clarkandcode"><div>Clark</div>
+    <a class="clarkandcode" ui-sref='clark'><div>Clark</div>
       <div class='under'>^ Resume` ^</div>
-    </div>
+    </a>
     <div><span>and</span></div>
-    <div class="clarkandcode"> Code
+    <a class="clarkandcode" ui-sref="code"> Code
       <div class='under'>^ Projects ^</div>
-    </div>
+    </a>
   </div>
-
+  <ui-view></ui-view>
+  <a class="contactBubble" ui-sref='contact'><div class='contact'>Contact</div></a>
 </body>
 </html>

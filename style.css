@@ -1,14 +1,14 @@
 body {
   background-color: lightgrey;
   color: red;
-  font-size: 6vw;
+  font-size: 10vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-span{
-  font-size: 15vw;
+span {
+  font-size: 22vw;
   color: yellow;
 }
 
@@ -29,24 +29,48 @@ span{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 1.5vw;
-  transition: transform 500ms ease-in-out;
+  padding-top: 2.5vw;
+  height: 13vw;
+  background-color: rgba(255, 255, 0, 0);;
+  transition: all 2s linear;
 }
 
 .clarkandcode:hover{
-  transform: scale(3);
-  /*background-color: yellow;*/
-    background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 0, 1);;
   border-radius: 40%;
-  width: 20vw;
-  height: 6vw;
+  height: 13vw;
   border: .2vw solid red;
 }
 
 .under {
-  font-size: 1vw;
-  margin-top: -1vw;
+  font-size: 2vw;
+  margin-top: 1vw;
 }
+
+.contactBubble {
+  background-image: url('https://pbs.twimg.com/profile_images/688949191431749632/qeB-8sN5.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position:fixed;
+  bottom: 1vw;
+  left: 1vw;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column-reverse;
+  height: 200px;
+  width: 200px;
+  align-items: center;
+}
+.contact{
+  color:yellow;
+  font-size: 50pt;
+  background-color: rgba(255, 0, 0, 0.4);
+  height: 50px;
+  line-height: 50px;
+  border-radius: 12px;
+}
+
 @media (max-width: 750px){
   #title{
     flex-direction: column;
@@ -65,13 +89,37 @@ span{
   }
 
   .clarkandcode:hover{
-    transform: scale(1.6);
-    /*background-color: rgba(0, 0, 0, 0.0);
-    border: .2vw solid rgba(0, 0, 0, 0.0);*/
+    transform: scale(1.3);
+    background-color: rgba(0, 0, 0, 0.0);
+    border: .2vw solid rgba(0, 0, 0, 0.0);
   }
 
   .under {
     font-size: 3vw;
     margin-top: 7vw;
   }
+  .contactBubble {
+    background-image: url('https://pbs.twimg.com/profile_images/688949191431749632/qeB-8sN5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:fixed;
+    bottom: 1vw;
+    left: 1vw;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 150px;
+    width: 150px;
+    align-items: center;
+  }
+  .contact{
+    color:yellow;
+    font-size: 30pt;
+    background-color: rgba(255, 0, 0, 0.4);
+    height: 30px;
+    line-height: 30px;
+    border-radius: 12px;
+  }
+
 }

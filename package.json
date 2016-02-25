@@ -1,0 +1,26 @@
+{
+  "name": "clarkandcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superman7117/ClarkandCode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/superman7117/ClarkandCode/issues"
+  },
+  "homepage": "https://github.com/superman7117/ClarkandCode#readme",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-ui-router": "^0.2.18",
+    "bower": "^1.7.7",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4"
+  }
+}
