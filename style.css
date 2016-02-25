@@ -6,25 +6,69 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+a{
+  text-decoration: none;
+}
 span {
   font-size: 22vw;
   color: yellow;
 }
+#function{
+  font-size: 1vw;
+  line-height: 10px;
+}
+.code{
+  display: flex;
+  flex-direction: column;
+  font-size: 4vw;
+}
+.code a{
+  text-decoration: none;
+  color: red;
 
-#title {
+}
+.contactForm{
+  display: flex;
+  flex-direction: column;
+  font-size: 3vw;
+  border: .5vw double red;
+  padding: 2vw;
+  border-radius: 12px;
+}
+input, button{
+  width: 50vw;
+  border-radius: 12px;
+  margin-bottom: .5vw;
+  font-size: 2vw;
+}
+textarea{
+  width: 50vw;
+  border-radius: 12px;
+  margin-bottom: .5vw;
+}
+#title{
   margin-top: 3vh;
   width: 96vw;
-  height: 90vh;
+  min-height: 90vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;;
+  line-height: 4vw;
+  align-items: center;
+  padding-top: 6vw;
+  padding-bottom: 6vw;
+}
+#nav {
   display: flex;
   justify-content: center;;
   line-height: 4vw;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 40%;
 }
 
 .clarkandcode {
+  color: red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +116,7 @@ span {
 }
 
 @media (max-width: 750px){
-  #title{
+  #nav{
     flex-direction: column;
     font-size: 25vw;
   }
