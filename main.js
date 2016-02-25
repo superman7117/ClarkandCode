@@ -8,6 +8,7 @@ theApp.config(function($stateProvider, $urlRouterProvider){
   .state('clark', {url: '/clark', templateUrl: 'partials/clark.html'})
   .state('code', {url: '/code', templateUrl: 'partials/code.html'})
   .state('contact', {url: '/contact', templateUrl: 'partials/contact.html'})
+  .state('blog', {url: '/blog', templateUrl: 'partials/blog.html'})
 
   $urlRouterProvider.otherwise("/")
 })
