@@ -2,8 +2,23 @@ body {
   background-color: #4d4d4d;
   color: red;
   font-size: 7vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
+.icons {
+  width: 10vw;
+  border-radius: 10%;
+}
+.card {
+  font-size: 2vw;
+  border-radius: 5%;
+  width: 20vw;
+  margin-top: 10vw;
+  border: 2px solid white;
+}
 a{
   text-decoration: none;
 }
